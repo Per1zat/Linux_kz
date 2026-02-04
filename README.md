@@ -33,8 +33,11 @@ ls -a -1                # дәл сол, бірақ бір бағанға шығ
 ls -hF -1 --sort=extension # қапшық мазмұнын «әдемі, бір бағанмен» көрсету
 ls build/css            # АҒЫМДАҒЫ_ҚАПШЫҚ/build/css қапшығының мазмұнын көрсету
 ls /d/projects          # D:/projects қапшығының мазмұнын көрсету
+
 Файлдық жүйеде жылжу
 Пайдаланушы әрқашан қандай да бір қапшықта болады, ол (немесе толық жолы) команда енгізу аймағына дейін көрсетіледі.
+
+```bash
 cd projects             # ағымдағы қапшықтағы projects қапшығына өту
 cd /d/projects          # windows: D:/projects мекенжайындағы projects қапшығына өту
 cd /c/Program\ Files    # windows: C:/Program Files қапшығына өту
@@ -42,15 +45,21 @@ cd .                    # ағымдағы директория
 cd ..                   # ата-аналық қапшыққа өту
 cd ~                    # үй директориясы
 cd -                    # соңғы жұмыс қапшығына өту
+
 Қапшық атауын толық термеу үшін алғашқы бірнеше әріпті теріп, <kbd>Tab</kbd> басыңыз — автотолықтыру іске асады. Бұл кез келген командаға қатысты.
 Қапшықтар мен файлдар жасау
+
+```bash
 mkdir project                        # «project» атты қапшық жасау
 mkdir project project/css project/js # бірнеше қапшық жасау
 mkdir -p project/{css,js}            # жоғарыдағыдай
 
 touch index.html                     # файл жасау
+
 touch index.html css/style.css js/script.js # файлдар жасау (css/ және js/ қапшықтары бар болуы керек)
 Файлдарды көшіру
+
+```bash
 cp index.html catalog.html # index.html файлын сол каталогта catalog.html деп көшіру
 cp index.html old/         # index.html файлын old/ қапшығына көшіру
 cp temp/ temp2/ -r         # каталогты көшіру (дублирлеу)
