@@ -63,7 +63,10 @@ touch index.html css/style.css js/script.js # файлдар жасау (css/ ж
 cp index.html catalog.html # index.html файлын сол каталогта catalog.html деп көшіру
 cp index.html old/         # index.html файлын old/ қапшығына көшіру
 cp temp/ temp2/ -r         # каталогты көшіру (дублирлеу)
+```
+
 Файлдарды қайта атау немесе жылжыту
+```bash
 mv index.html old              # файлды қапшыққа жылжыту
 mv index.html old/new_name.txt # файлды қапшыққа жаңа атаумен жылжыту
 mv order.txt orderNew.txt      # файл атауын өзгерту
@@ -134,12 +137,14 @@ var2=$(( $var1 * 2 ))
 echo $var2
 ```
 if-then конструкциясы
+```bash
 if команда
 then
 командалар
 fi
+```
 Мысал:
-
+```bash
 #!/bin/bash
 if pwd
 then
@@ -163,7 +168,7 @@ echo "The user $user doesn’t exist"
 fi
 ```
 CASE конструкциясы
-
+```bash
 case "$extension" in
   "jpg"|"jpeg") echo "It's image with jpeg extension." ;;
   "png")        echo "It's image with png extension."  ;;
@@ -179,21 +184,35 @@ for arg in elem1 elem2 ... elemN
 do
 ```
   # командалар
+  ```bash
 done
+```
 WHILE — шарт ақиқат болғанша орындалады
+```bash
 while [[ condition ]]
 do
+```
   # командалар
+  ```bash
 done
+```
 UNTIL — шарт жалған болғанша орындалады
+```bash
 until [[ condition ]]; do
+ ```
   # командалар
+  ```bash
 done
+```
 SELECT — пайдаланушы мәзірі үшін
+
+```bash
 select answer in elem1 elem2 ... elemN
 do
+
   # командалар
 done
+```
 Сандарды салыстыру
 ```bash
 n1 -eq n2 # тең
